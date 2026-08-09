@@ -6,17 +6,17 @@ _The best-of-breed cloud-based sticky note solution. Obviously not containing an
 
 Getting started
 ---------------
-In order to work on Sticky Notes, you'll need the [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download), and your favorite code-editing tool. If you have no prior tool preference, [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) is recommended, as this incurs no extra cost to _Sticky Software Solutions™_, thus preserving shareholder dividends next quarter.
+In order to work on Sticky Notes, you'll need the [.NET 10.0 SDK](https://dotnet.microsoft.com/en-us/download), and your favorite code-editing tool. If you have no prior tool preference, [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) is recommended, as this incurs no extra cost to _Sticky Software Solutions™_, thus preserving shareholder dividends next quarter.
 
 ### Cloning, building and running
-Start by cloning this repo. Then navigate into the `web-hack/Notes.Api/` folder and start the application with `dotnet watch run`:
+Start by cloning this repo. Then navigate into the `Notes.Api/` folder and start the application with `dotnet watch run`:
 ```shell
-$ web-hack/Notes.Api> dotnet watch run
+$ Notes.Api> dotnet watch run
 watch : Hot reload enabled. For a list of supported edits, see https://aka.ms/dotnet/hot-reload. Press "Ctrl + R" to restart.
 watch : Building...
   Determining projects to restore...
   All projects are up-to-date for restore.
-  Notes.Api -> /web-hack/Notes.Api/bin/Debug/net6.0/Notes.Api.dll
+  Notes.Api -> ./Notes.Api/bin/Debug/net10.0/Notes.Api.dll
 watch : Started
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:5000
@@ -25,7 +25,7 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
-      Content root path: /web-hack/Notes.Api
+      Content root path: ./Notes.Api
 Opening in existing browser session.
 
 ```
