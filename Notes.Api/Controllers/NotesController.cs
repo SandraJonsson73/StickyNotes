@@ -78,6 +78,13 @@ public class NotesController : ControllerBase
             return NotFound($"Note with noteId {noteId} not found");
         }
 
+        var authorizationHeader = Request.Headers["Authorization"];
+        var user = BasicAuthenticationHandler.GetUserFrom(authorizationHeader);
+        if (note.Author != user.Username)
+        {
+            return Forbid();
+        }
+
         return Ok(note);
     }
 
