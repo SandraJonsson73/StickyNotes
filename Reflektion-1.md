@@ -205,10 +205,4 @@ Samma sätt som man inte säger "Jag lås dörren ibland när jag är rädd" - m
 
 ---
 
-## Nästa Steg: Andra OWASP-Sårbarheter
-Nu när jag förstår A01 (Broken Access Control), är jag redo att attackera:
-- A02: Cryptographic Failures
-- A03: Injection (SQL, XSS, etc.)
-- A04: Insecure Design
-... och så vidare
 

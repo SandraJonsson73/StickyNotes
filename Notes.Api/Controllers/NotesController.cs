@@ -33,10 +33,10 @@ public class NotesController : ControllerBase
         var authorizationHeader = Request.Headers["Authorization"];
         var user = BasicAuthenticationHandler.GetUserFrom(authorizationHeader);
 
-        var searchPattern = $"%{containing}%";
         return _database.Notes
-            .Where(n => n.Author == user.Username && EF.Functions.Like(n.Content, searchPattern))
-            .OrderBy(n => n.Id)
+            .Where(note => note.Author == user.Username)
+            .Where(note => string.IsNullOrEmpty(containing) ? true : note.Content.Contains(containing))
+            .OrderBy(note => note.Id)
             .ToArray();
     }
 
